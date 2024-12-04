@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Tenis</title>
+    <style>
+        /* General */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #007bff, #00d4ff);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #0056b3;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #0056b3;
+            border-bottom: 3px solid #00d4ff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f1faff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Página de Tenis</h1>
+    </header>
+    <nav>
+        <a href="#jugadores">Jugadores</a>
+        <a href="#partidos">Partidos</a>
+        <a href="#eventos">Próximos Eventos</a>
+    </nav>
+    <main>
+        <section id="jugadores">
+            <h2 class="section-title">Jugadores Destacados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Ranking</th>
+                        <th>País</th>
+                        <th>Puntos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Novak Djokovic</td>
+                        <td>1</td>
+                        <td>Serbia</td>
+                        <td>10,575</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Alcaraz</td>
+                        <td>2</td>
+                        <td>España</td>
+                        <td>9,465</td>
+                    </tr>
+                    <tr>
+                        <td>Daniil Medvedev</td>
+                        <td>3</td>
+                        <td>Rusia</td>
+                        <td>7,300</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="partidos">
+            <h2 class="section-title">Últimos Partidos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jugador 1</th>
+                        <th>Jugador 2</th>
+                        <th>Resultado</th>
+                        <th>Torneo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Novak Djokovic</td>
+                        <td>Carlos Alcaraz</td>
+                        <td>6-4, 6-3</td>
+                        <td>Masters 1000</td>
+                    </tr>
+                    <tr>
+                        <td>Daniil Medvedev</td>
+                        <td>Stefanos Tsitsipas</td>
+                        <td>6-2, 7-6</td>
+                        <td>Grand Slam</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="eventos">
+            <h2 class="section-title">Próximos Eventos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Fecha</th>
+                        <th>Lugar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Australian Open</td>
+                        <td>15-28 Enero</td>
+                        <td>Melbourne, Australia</td>
+                    </tr>
+                    <tr>
+                        <td>Indian Wells</td>
+                        <td>6-19 Marzo</td>
+                        <td>California, USA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Página de Tenis. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
